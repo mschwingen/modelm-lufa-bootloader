@@ -246,6 +246,9 @@
 			/** Selects the Atmel Xplained-MINI specific board drivers, including the driver for the board LEDs. */
 			#define BOARD_XPLAINED_MINI        60
 
+			/** Selects the ModelM board drivers, including the driver for the board LEDs. */
+			#define BOARD_MODELM               61
+
 			#if !defined(__DOXYGEN__)
 				#define BOARD_                 BOARD_NONE
 

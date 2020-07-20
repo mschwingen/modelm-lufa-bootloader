@@ -118,6 +118,13 @@ void Application_Jump_Check(void)
 
 		/* Disable pull-up after the check has completed */
 		PORTC &= ~(1 << 7);
+	#elif (BOARD == BOARD_MODELM)
+		/* Enable pull-up on the IO13 pin so we can use it to select the mode */
+		PORTC |= (1 << 6);
+		Delay_MS(10);
+
+		/* If IO13 is not jumpered to ground, start the user application instead */
+		JumpToApplication = ((PINC & (1 << 6)) != 0);
 	#elif ((BOARD == BOARD_XPLAIN) || (BOARD == BOARD_XPLAIN_REV1))
 		/* Disable JTAG debugging */
 		JTAG_DISABLE();

@@ -1,3 +1,16 @@
+DFU Bootloader for the IBM Model M USB board (http://www.schwingen.org/modelm-usb/)
+by Michael Schwingen, <michael@schwingen.org>
+
+Build Instructions:
+cd Bootloaders/DFU
+make
+make avrdude
+make avrdude-fuses
+
+Bootloader is activated by holding the button near the USB socket while powering up the board.
+
+
+
 
                    _   _ _ ___ _
                   | | | | | __/ \
