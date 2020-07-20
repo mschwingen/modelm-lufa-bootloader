@@ -7,6 +7,8 @@ make
 make avrdude
 make avrdude-fuses
 
+(or use the pre-compiled files from the release-folder)
+
 Bootloader is activated by holding the button near the USB socket while powering up the board.
 
 
