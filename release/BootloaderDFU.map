@@ -7,9 +7,9 @@ Archive member included to satisfy reference by file (symbol)
 /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr5/libatmega32u4.a(eeupd_byte.o)
                               obj/BootloaderDFU.o (symbol from plugin) (eeprom_update_byte)
 /usr/lib/gcc/avr/5.4.0/avr5/libgcc.a(_copy_data.o)
-                              /tmp/ccoM5NvE.ltrans0.ltrans.o (__do_copy_data)
+                              /tmp/ccZz6GAa.ltrans0.ltrans.o (__do_copy_data)
 /usr/lib/gcc/avr/5.4.0/avr5/libgcc.a(_clear_bss.o)
-                              /tmp/ccoM5NvE.ltrans0.ltrans.o (__do_clear_bss)
+                              /tmp/ccZz6GAa.ltrans0.ltrans.o (__do_clear_bss)
 
 Allocating common symbols
 Common symbol       size              file
@@ -115,7 +115,7 @@ Linker script and memory map
 Address of section .data set to 0x800100
 LOAD /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr5/crtatmega32u4.o
 LOAD obj/BootloaderDFU.o
-LOAD /tmp/ccoM5NvE.ltrans0.ltrans.o
+LOAD /tmp/ccZz6GAa.ltrans0.ltrans.o
 LOAD obj/Descriptors.o
 LOAD obj/BootloaderAPI.o
 LOAD obj/BootloaderAPITable.o
@@ -281,7 +281,7 @@ END GROUP
  .init2         0x00000000000070ac        0xc /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr5/crtatmega32u4.o
  *(.init2)
  *(.init3)
- .init3         0x00000000000070b8       0x42 /tmp/ccoM5NvE.ltrans0.ltrans.o
+ .init3         0x00000000000070b8       0x42 /tmp/ccZz6GAa.ltrans0.ltrans.o
                 0x00000000000070b8                Application_Jump_Check
  *(.init3)
  *(.init4)
@@ -344,7 +344,7 @@ END GROUP
                 0x0000000000007124                __vector_16
                 0x0000000000007124                __vector_18
                 0x0000000000007124                __vector_42
- .text          0x0000000000007126      0x51e /tmp/ccoM5NvE.ltrans0.ltrans.o
+ .text          0x0000000000007126      0x51e /tmp/ccZz6GAa.ltrans0.ltrans.o
                 0x00000000000071b8                __vector_10
                 0x00000000000072fc                BootloaderAPI_WriteLock
                 0x000000000000731e                BootloaderAPI_ReadLock
@@ -356,7 +356,7 @@ END GROUP
                 0x0000000000007628                __vector_20
                 0x0000000000007644                . = ALIGN (0x2)
  *(.text.*)
- .text.startup  0x0000000000007644      0x7ec /tmp/ccoM5NvE.ltrans0.ltrans.o
+ .text.startup  0x0000000000007644      0x7ec /tmp/ccZz6GAa.ltrans0.ltrans.o
                 0x0000000000007644                main
  .text.avr-libc
                 0x0000000000007e30       0x10 /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr5/libatmega32u4.a(eerd_byte.o)
@@ -395,11 +395,11 @@ END GROUP
 .data           0x0000000000800100       0x7e load address 0x0000000000007e68
                 0x0000000000800100                PROVIDE (__data_start, .)
  *(.data)
- .data          0x0000000000800100        0x2 /tmp/ccoM5NvE.ltrans0.ltrans.o
+ .data          0x0000000000800100        0x2 /tmp/ccZz6GAa.ltrans0.ltrans.o
  *(.data*)
  *(.gnu.linkonce.d*)
  *(.rodata)
- .rodata        0x0000000000800102       0x7c /tmp/ccoM5NvE.ltrans0.ltrans.o
+ .rodata        0x0000000000800102       0x7c /tmp/ccZz6GAa.ltrans0.ltrans.o
  *(.rodata*)
  *(.gnu.linkonce.r*)
                 0x000000000080017e                . = ALIGN (0x2)
@@ -409,7 +409,7 @@ END GROUP
 .bss            0x000000000080017e       0x1d
                 0x000000000080017e                PROVIDE (__bss_start, .)
  *(.bss)
- .bss           0x000000000080017e       0x1d /tmp/ccoM5NvE.ltrans0.ltrans.o
+ .bss           0x000000000080017e       0x1d /tmp/ccZz6GAa.ltrans0.ltrans.o
  *(.bss*)
  *(COMMON)
                 0x000000000080019b                PROVIDE (__bss_end, .)
@@ -462,7 +462,7 @@ END GROUP
 
 .comment        0x0000000000000000       0x11
  *(.comment)
- .comment       0x0000000000000000       0x11 /tmp/ccoM5NvE.ltrans0.ltrans.o
+ .comment       0x0000000000000000       0x11 /tmp/ccZz6GAa.ltrans0.ltrans.o
                                          0x12 (size before relaxing)
 
 .note.gnu.avr.deviceinfo
@@ -566,32 +566,32 @@ LOAD linker stubs
 Cross Reference Table
 
 Symbol                                            File
-Application_Jump_Check                            /tmp/ccoM5NvE.ltrans0.ltrans.o
+Application_Jump_Check                            /tmp/ccZz6GAa.ltrans0.ltrans.o
                                                   obj/BootloaderDFU.o (symbol from plugin)
-BootloaderAPI_ErasePage                           /tmp/ccoM5NvE.ltrans0.ltrans.o
+BootloaderAPI_ErasePage                           /tmp/ccZz6GAa.ltrans0.ltrans.o
                                                   obj/BootloaderAPI.o (symbol from plugin)
                                                   obj/BootloaderAPITable.o
                                                   obj/BootloaderDFU.o (symbol from plugin)
-BootloaderAPI_FillWord                            /tmp/ccoM5NvE.ltrans0.ltrans.o
+BootloaderAPI_FillWord                            /tmp/ccZz6GAa.ltrans0.ltrans.o
                                                   obj/BootloaderAPI.o (symbol from plugin)
                                                   obj/BootloaderAPITable.o
                                                   obj/BootloaderDFU.o (symbol from plugin)
 BootloaderAPI_JumpTable                           obj/BootloaderAPITable.o
-BootloaderAPI_ReadFuse                            /tmp/ccoM5NvE.ltrans0.ltrans.o
+BootloaderAPI_ReadFuse                            /tmp/ccZz6GAa.ltrans0.ltrans.o
                                                   obj/BootloaderAPI.o (symbol from plugin)
                                                   obj/BootloaderAPITable.o
-BootloaderAPI_ReadLock                            /tmp/ccoM5NvE.ltrans0.ltrans.o
+BootloaderAPI_ReadLock                            /tmp/ccZz6GAa.ltrans0.ltrans.o
                                                   obj/BootloaderAPI.o (symbol from plugin)
                                                   obj/BootloaderAPITable.o
-BootloaderAPI_ReadSignature                       /tmp/ccoM5NvE.ltrans0.ltrans.o
+BootloaderAPI_ReadSignature                       /tmp/ccZz6GAa.ltrans0.ltrans.o
                                                   obj/BootloaderAPI.o (symbol from plugin)
                                                   obj/BootloaderAPITable.o
 BootloaderAPI_Signatures                          obj/BootloaderAPITable.o
 BootloaderAPI_Trampolines                         obj/BootloaderAPITable.o
-BootloaderAPI_WriteLock                           /tmp/ccoM5NvE.ltrans0.ltrans.o
+BootloaderAPI_WriteLock                           /tmp/ccZz6GAa.ltrans0.ltrans.o
                                                   obj/BootloaderAPI.o (symbol from plugin)
                                                   obj/BootloaderAPITable.o
-BootloaderAPI_WritePage                           /tmp/ccoM5NvE.ltrans0.ltrans.o
+BootloaderAPI_WritePage                           /tmp/ccZz6GAa.ltrans0.ltrans.o
                                                   obj/BootloaderAPI.o (symbol from plugin)
                                                   obj/BootloaderAPITable.o
                                                   obj/BootloaderDFU.o (symbol from plugin)
@@ -681,14 +681,14 @@ __data_end                                        /usr/lib/gcc/avr/5.4.0/avr5/li
 __data_load_start                                 /usr/lib/gcc/avr/5.4.0/avr5/libgcc.a(_copy_data.o)
 __data_start                                      /usr/lib/gcc/avr/5.4.0/avr5/libgcc.a(_copy_data.o)
 __do_clear_bss                                    /usr/lib/gcc/avr/5.4.0/avr5/libgcc.a(_clear_bss.o)
-                                                  /tmp/ccoM5NvE.ltrans0.ltrans.o
+                                                  /tmp/ccZz6GAa.ltrans0.ltrans.o
 __do_copy_data                                    /usr/lib/gcc/avr/5.4.0/avr5/libgcc.a(_copy_data.o)
-                                                  /tmp/ccoM5NvE.ltrans0.ltrans.o
+                                                  /tmp/ccZz6GAa.ltrans0.ltrans.o
 __heap_end                                        /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr5/crtatmega32u4.o
 __init                                            /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr5/crtatmega32u4.o
 __stack                                           /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr5/crtatmega32u4.o
 __vector_1                                        /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr5/crtatmega32u4.o
-__vector_10                                       /tmp/ccoM5NvE.ltrans0.ltrans.o
+__vector_10                                       /tmp/ccZz6GAa.ltrans0.ltrans.o
                                                   obj/USBInterrupt_AVR8.o (symbol from plugin)
                                                   /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr5/crtatmega32u4.o
 __vector_11                                       /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr5/crtatmega32u4.o
@@ -701,7 +701,7 @@ __vector_17                                       /usr/lib/gcc/avr/5.4.0/../../.
 __vector_18                                       /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr5/crtatmega32u4.o
 __vector_19                                       /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr5/crtatmega32u4.o
 __vector_2                                        /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr5/crtatmega32u4.o
-__vector_20                                       /tmp/ccoM5NvE.ltrans0.ltrans.o
+__vector_20                                       /tmp/ccZz6GAa.ltrans0.ltrans.o
                                                   obj/BootloaderDFU.o (symbol from plugin)
                                                   /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr5/crtatmega32u4.o
 __vector_21                                       /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr5/crtatmega32u4.o
@@ -737,16 +737,16 @@ __vector_default                                  /usr/lib/gcc/avr/5.4.0/../../.
 __vectors                                         /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr5/crtatmega32u4.o
 _exit                                             /usr/lib/gcc/avr/5.4.0/avr5/libgcc.a(_exit.o)
 eeprom_read_byte                                  /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr5/libatmega32u4.a(eerd_byte.o)
-                                                  /tmp/ccoM5NvE.ltrans0.ltrans.o
+                                                  /tmp/ccZz6GAa.ltrans0.ltrans.o
                                                   obj/EndpointStream_AVR8.o (symbol from plugin)
                                                   obj/BootloaderDFU.o (symbol from plugin)
 eeprom_update_byte                                /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr5/libatmega32u4.a(eeupd_byte.o)
-                                                  /tmp/ccoM5NvE.ltrans0.ltrans.o
+                                                  /tmp/ccZz6GAa.ltrans0.ltrans.o
                                                   obj/EndpointStream_AVR8.o (symbol from plugin)
                                                   obj/BootloaderDFU.o (symbol from plugin)
 eeprom_update_r18                                 /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr5/libatmega32u4.a(eeupd_byte.o)
 exit                                              /usr/lib/gcc/avr/5.4.0/avr5/libgcc.a(_exit.o)
                                                   /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr5/crtatmega32u4.o
-main                                              /tmp/ccoM5NvE.ltrans0.ltrans.o
+main                                              /tmp/ccZz6GAa.ltrans0.ltrans.o
                                                   obj/BootloaderDFU.o (symbol from plugin)
                                                   /usr/lib/gcc/avr/5.4.0/../../../avr/lib/avr5/crtatmega32u4.o
